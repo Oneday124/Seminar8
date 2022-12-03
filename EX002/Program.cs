@@ -40,8 +40,8 @@ int[,] TranspositionArray (int[,] array)
     return array; 
 }
 
-int rows = 4;
-int cols = 4;
+int rows = 5;
+int cols = 5;
 
 int[,] array = new int[rows,cols];
 
