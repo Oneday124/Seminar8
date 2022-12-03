@@ -38,7 +38,7 @@ int ItemCounts (int[,] array, int element)
     return count; 
 }
 
-void Count(int[,] array, int max)
+void PrintQuantity(int[,] array, int max)
 {
     int element = 0;
     while(element <= max)
@@ -64,4 +64,4 @@ FillArray(array, max);
 PrintArray(array);
 System.Console.WriteLine();
 
-Count(array, max);
+PrintQuantity(array, max);
