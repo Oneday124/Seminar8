@@ -33,7 +33,7 @@ int[,] SortArrayMin(int[,] array, int cols, int rows)
         {
             for (int k = 0; k < array.GetLength(1) - j - 1; k++)
             {
-                if (array[i, k] > array[i, k + 1])
+                if (array[i, k] < array[i, k + 1])
                 {
                     temp = array[i, k];
                     array[i, k] = array[i, k +1];
@@ -45,8 +45,8 @@ int[,] SortArrayMin(int[,] array, int cols, int rows)
     return array;
 }
 
-int rows = 5;
-int cols = 5;
+int rows = 4;
+int cols = 3;
 int[,] array = new int[rows,cols];
 
 FillArray(array);
